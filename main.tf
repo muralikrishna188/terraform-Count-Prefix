@@ -2,8 +2,8 @@ terraform {
   backend "azurerm"{
     resource_group_name = "storage-tfstate-rg"
     storage_account_name = "tfstateeastus001"
-    container_name = "appservice"
-    key = "terraform.appservice"
+    container_name = "terraformdev"
+    key = "terraform.terraformdev"
     access_key = "7wMkPUfvaKgZOmoDlr1IlXG9TMFixqDFzztFTl/Z62AGxnnzIx1BiXx7NHDQYVE+EdORu755rzIo+AStBDcZpQ=="
   }
 }
@@ -49,7 +49,7 @@ resource "azurerm_app_service_plan" "appplan11" {
 }
 
 resource "azurerm_app_service" "webapp1" {
-  name = "webappdev64"
+  name = "webappdev644"
   location = azurerm_resource_group.webapprg1.location
   resource_group_name = azurerm_resource_group.webapprg1.name
   app_service_plan_id = azurerm_app_service_plan.appplan11.id
