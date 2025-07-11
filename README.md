@@ -1,4 +1,4 @@
-Here's a reformatted version of your content with GitHub README.md formatting, including headings and highlighting:
+
 
 ```markdown
 # Scaling Infrastructure with Terraform Count and Prefix
